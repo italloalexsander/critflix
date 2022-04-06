@@ -7,6 +7,15 @@
         margin-top: 5px;
         width: 190px;
     }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .modal > div{
+        width: 80%;
+    }
 }
 
 @media screen and (min-width:1000px){

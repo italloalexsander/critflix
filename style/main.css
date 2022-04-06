@@ -16,6 +16,7 @@ body{
     color: white;
 }
 
+
 header .container{
     display:flex;
     flex-direction: row; /*É o default, mas tá aqui pra ilustrar*/
@@ -71,6 +72,7 @@ header nav a:hover{
     color: white;
     font-weight: bold;
     width: 190px;
+    
 
     padding: 15px 30px;
     margin-right: 15px;
@@ -114,6 +116,7 @@ header nav a:hover{
 
 .modal {
     position: fixed;
+    color: black;
     top: 0;
     right: 0;
     bottom: 0;
@@ -128,15 +131,37 @@ header nav a:hover{
     pointer-events: none;
   }
 
-  .modal:target {
-    opacity: 1;
-    pointer-events: auto;
-  }
+.inf-div{
+    padding: 15px;
+}
 
-  .modal > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 15px 20px;
-    background: #fff;
-  }
+
+.modal:target {
+opacity: 1;
+pointer-events: auto;
+}
+
+.modal > div {
+width: 40%;
+position: relative;
+margin: 10% auto;
+padding: 15px 20px;
+background: black;
+color: white;
+text-align: justify;
+}
+
+.fechar {
+text-decoration: none;
+position: absolute;
+width: 30px;
+right: -15px;
+top: -20px;
+text-align: center;
+line-height: 30px;
+margin-top: 5px;
+background: yellow;
+border-radius: 50%;
+font-size: 16px;
+color: black;
+}
